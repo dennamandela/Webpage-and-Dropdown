@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            li {
+                float: left;
+            }
+    
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+    
+            li a:hover{
+                background-color: #111;
+            }
+    
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: red;
+            }
+
+            .header {
+                background-color: #f1f1f1;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: rgb(0, 255, 255);
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a{
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {background-color: #f2f2f2;}
+        </style>    
+    </head>
+    <body>
+        <ul>
+            <li><a class="activer" href="Home.html">Home</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Sistem Informasi</a>
+                <div class="dropdown-content">
+                    <a href="DataMahasiswa.html">Data Mahasiswa</a>
+                    <a href="Jadwal.html">Jadwal Perkuliahan</a>
+                </div>
+            </li>
+        </ul>
+        <div class="header">
+            <h1>Profil Pribadi</h1>
+        </div>
+                <h2>Data Profil</h2>
+                <table>
+                    <tr>
+                        <th>NIM</th>
+                        <th>:</th>
+                        <th>204060033</th>
+                    </tr>
+                    <tr style="background-color: green;">
+                        <th>Nama</th>
+                        <th>:</th>
+                        <th>Denna Mandela</th>
+                    </tr>
+                    <tr>
+                        <th>Program Studi</th>
+                        <th>:</th>
+                        <th>Teknik Informatika</th>
+                    </tr>
+                    <tr>
+                        <th>Tempat, Tanggal Lahir</th>
+                        <th>:</th>
+                        <th>Bandung, 13/06/2001</th>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th>
+                        <th>:</th>
+                        <th>Laki-Laki</th>
+                    </tr>
+                    <tr>
+                        <th>Agama</th>
+                        <th>:</th>
+                        <th>Islam</th>
+                    </tr>
+                </table>    
+    </body>
+</html>

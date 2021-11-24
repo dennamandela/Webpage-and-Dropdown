@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <style>
+            li {
+                float: left;
+            }
+    
+            li a, .dropbtn {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li.dropdown {
+                display: inline-block;
+            }
+    
+            li a:hover{
+                background-color: #111;
+            }
+    
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #09f;
+            }
+
+            .header {
+                background-color: #f1f1f1;
+                padding: 20px;
+                text-align: center;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: rgb(0, 255, 255);
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a{
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover {background-color: #f1f1f1;}
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            table, td, th {
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%
+            }
+
+            th, td {
+                padding: 15px;
+            }
+        </style>    
+    </head>
+    <body>
+        <ul>
+            <li><a class="active" href="Home.html">Home</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Sistem Informasi</a>
+                <div class="dropdown-content">
+                    <a href="DataMahasiswa.html">Data Mahasiswa</a>
+                    <a href="Jadwal.html">Jadwal Perkuliahan</a>
+                </div>
+            </li>
+        </ul>
+        <div class="header">
+            <h1>Jadwal Perkuliahan</h1>
+        </div>
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Waktu</th>
+                <th>Mata Kuliah</th>
+                <th>SKS</th>
+                <th>Dosen Pengajar</th>
+                <th>Ruangan</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>10.30 - 13.00</td>
+                <td>Sistem Operasi</td>
+                <td>3</td>
+                <td>Iwan Abadi, S.Kom., M.M</td>
+                <td>Lt4.2</td>
+                <td>Gabung</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>13.01 - 16.20</td>
+                <td>Rekayasa Perangkat Lunak</td>
+                <td>4</td>
+                <td>Dr. Hendra Sandhi Firmansyah, S.T., M.T.</td>
+                <td>Lt2. Labkom 2</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>10.00 - 12.30</td>
+                <td>Pemrograman Web 1</td>
+                <td>3</td>
+                <td>Komarudin Tasdik, M.Kom</td>
+                <td>Lt2. Labkom 2</td>
+                <td>Gabung</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>13.00 - 15.30</td>
+                <td>Pemrograman Visual</td>
+                <td>3</td>
+                <td>Galih, S.T., M.Kom</td>
+                <td>Lt2. Labkom 2</td>
+                <td>Gabung</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>12.30 - 15.00</td>
+                <td>Basis Data Lanjut</td>
+                <td>3</td>
+                <td>Alkautsar Rahman, S.T., M.Kom</td>
+                <td>Lt4.2</td>
+                <td>Gabung</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>15.01 - 16.40</td>
+                <td>Keterampilan Interpersonal dan Kepemimpinan</td>
+                <td>2</td>
+                <td>Dr. Dudung Abdulah, M.Si</td>
+                <td>Lt4.2</td>
+                <td>Gabung</td>
+            </tr>
+            <tr>
+                <td>Jum'at</td>
+                <td>08.30 - 11.00</td>
+                <td>Logika Informatika</td>
+                <td>3</td>
+                <td>Harrison D.S., S.T., M.T.</td>
+                <td>Lt4.2</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </body>
+</html>
