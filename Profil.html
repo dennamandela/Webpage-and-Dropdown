@@ -28,7 +28,7 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: red;
+                background-color: #09f;
             }
 
             .header {
@@ -78,6 +78,12 @@
             }
 
             tr:nth-child(even) {background-color: #f2f2f2;}
+            
+            .footer {
+                background-color: #09f;
+                padding: 10px;
+                 text-align: center;
+            }   
         </style>    
     </head>
     <body>
@@ -92,41 +98,52 @@
                 </div>
             </li>
         </ul>
-        <div class="header">
-            <h1>Profil Pribadi</h1>
+        <hr>
+        <header style="text-align: center;">
+            <img src="denna.jpg" width="200" height="250" style="border-radius: 50%;"/>
+            <h1>Denna Mandela</h1>
+            <p>(Back-End Developer)</p>
+        </header>
+    
+        <hr />
+    
+        <article style="text-align: center;">
+            <h2>Overview</h2>
+            <p>
+                Hi, saya adalah Back-End Developer yang berdomisili di Bandung.
+                Saat ini saya sedang belajar Framework Laravel
+            </p>
+        </article>
+    
+        <div style="max-width: 600px; margin: 3em auto">
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Pengalaman</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>PHP (Expert)</li>
+                                <li>Java (Medium)</li>           
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Freelancer di PT. Abdi Sentosa Abadi</li>
+                                <li>Junior Back-End Developer di Rimas Technology</li>
+                                
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-                <h2>Data Profil</h2>
-                <table>
-                    <tr>
-                        <th>NIM</th>
-                        <th>:</th>
-                        <th>204060033</th>
-                    </tr>
-                    <tr style="background-color: green;">
-                        <th>Nama</th>
-                        <th>:</th>
-                        <th>Denna Mandela</th>
-                    </tr>
-                    <tr>
-                        <th>Program Studi</th>
-                        <th>:</th>
-                        <th>Teknik Informatika</th>
-                    </tr>
-                    <tr>
-                        <th>Tempat, Tanggal Lahir</th>
-                        <th>:</th>
-                        <th>Bandung, 13/06/2001</th>
-                    </tr>
-                    <tr>
-                        <th>Jenis Kelamin</th>
-                        <th>:</th>
-                        <th>Laki-Laki</th>
-                    </tr>
-                    <tr>
-                        <th>Agama</th>
-                        <th>:</th>
-                        <th>Islam</th>
-                    </tr>
-                </table>    
+        <div class="footer">
+            <p>Copyright &copy; 2021 Denna Mandela.</p>
+        </div>
     </body>
 </html>

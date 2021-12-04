@@ -33,7 +33,7 @@
 
             .header {
                 background-color: #f1f1f1;
-                padding: 20px;
+                padding: 60px;
                 text-align: center;
             }
 
@@ -58,11 +58,80 @@
             .dropdown:hover .dropdown-content {
                 display: block;
             }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {background-color: #f2f2f2;}
+            
+            .footer {
+                background-color: #09f;
+                padding: 10px;
+                 text-align: center;
+            }
+
+            div.gallery {
+                margin: 5px;
+                border: 1px solid #ccc;
+                float: left;
+                width: 180px;
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+                }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+            }
+
+            .column {
+                float: left;
+                padding: 10px;
+            }
+
+            /* Left and right column */
+            .column.side {
+                width: 35%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 30%;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
         </style>    
     </head>
     <body>
         <ul>
-            <li><a class="active" href="Home.html">Home</a></li>
+            <li><a class="activer" href="Home.html">Home</a></li>
             <li><a href="Profil.html">Profil</a></li>
             <li class="dropdown">
                 <a href="javascript:void(0)" class="dropbtn">Sistem Informasi</a>
@@ -74,6 +143,35 @@
         </ul>
         <div class="header">
             <h1>Selamat Datang</h1>
+        </div>
+        <div class="row">
+            <div class="column side">
+                <div class="gallery">
+                    <a target="_blank" href="ti.jpg">
+                        <img src="ti.jpg" alt="Teknik Informatika" width="600" height="400">
+                    </a>
+                    <div class="desc">Informatika merupakan disiplin ilmu komputer yaitu data maupun informasi pada mesin berbasis komputasi.</div>
+                </div>
+            </div>
+            <div class="column middle">
+                <div class="gallery">
+                    <a target="_blank" href="si.jpg">
+                        <img src="si.jpg" alt="Sistem Informasi" width="600" height="400">
+                    </a>
+                    <div class="desc">Sistem Informasi adalah kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi itu untuk mendukung operasi dan manajemen.</div>
+                </div>
+            </div>
+            <div class="column side">
+                <div class="gallery">
+                    <a target="_blank" href="download.jpg">
+                        <img src="download.jpg" alt="STMIK Jabar" width="600" height="400">
+                    </a>
+                    <div class="desc">Pendirian STMIK Jabar dibawah bimbingan Universitas Padjajaran. Lokasi kampus STMIK Jabar berada di Kota Bandung.</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2021 Denna Mandela.</p>
         </div>
     </body>
 </html>
